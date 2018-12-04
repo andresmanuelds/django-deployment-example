@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Please login!</h1>
+    <form class="" action="{% url 'users_register_app:user_login' %}" method="post">
+      {% csrf_token %} <!-- Cross Site Request Forgery protection -->
+      <label for="username">Username:</label>
+      <input type="text" name="username" value="" placeholder="Please enter username here!">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="">
+      <input type="submit" name="login buttom" value="Login Here">
+    </form>
+  </div>
+</div>
+{% endblock %}
