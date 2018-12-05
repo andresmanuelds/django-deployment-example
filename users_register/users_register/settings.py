@@ -30,7 +30,7 @@ print(MEDIA_DIR)
 SECRET_KEY = 'rdd7c_t(k2t-alqttbij_-+bfoaevx!!+-4&ftghr9(ix*1q@1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 MY_DOMAIN = 'andresmanuelds.pythonanywhere.com'
 ALLOWED_HOSTS = [MY_DOMAIN, ]
