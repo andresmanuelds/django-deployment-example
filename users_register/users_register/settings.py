@@ -17,6 +17,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+print('Base dir: ' + BASE_DIR)
+print('separator: ' + os.sep)
 print(TEMPLATE_DIR)
 print(STATIC_DIR)
 print(MEDIA_DIR)
@@ -31,7 +33,7 @@ SECRET_KEY = 'rdd7c_t(k2t-alqttbij_-+bfoaevx!!+-4&ftghr9(ix*1q@1'
 DEBUG = True
 
 MY_DOMAIN = 'andresmanuelds.pythonanywhere.com'
-ALLOWED_HOSTS = [MY_DOMAIN,]
+ALLOWED_HOSTS = [MY_DOMAIN, ]
 
 
 # Application definition
